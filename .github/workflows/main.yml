@@ -33,7 +33,7 @@ jobs:
           run: npm start
     test:
         needs: [build]
-        name: Test phase
+        name: Test Phase
         runs-on: ubuntu-latest
         strategy:
             matrix:

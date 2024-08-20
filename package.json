@@ -5,6 +5,7 @@
 
   "scripts": {
     "start": "node src/app.js",
+    "start-project": "node src/index.js",
     "test": "jest --runInBand --detectOpenHandles --forceExit "
   },
   "author": "",
