@@ -23,8 +23,8 @@ jobs:
             path: |
              ~/.npm
              node_modules
-             key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-             restore-keys: |
+            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+            restore-keys: |
              ${{ runner.os }}-node-
 
         - name: Setup Dependencies 
@@ -51,8 +51,8 @@ jobs:
             path: |
              ~/.npm
              node_modules
-             key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-             restore-keys: |
+            key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+            restore-keys: |
              ${{ runner.os }}-node- 
         - name: Setup Dependencies 
           run: npm install
