@@ -26,7 +26,9 @@ app.get('/todos/:id', (req, res) => {
 app.delete('/todos/:id', (req, res) => {
   const success = deleteTodo(Number(req.params.id));
   if (success) {
-    res.status(204).end();
+    res.status(204).json({
+        message:"Todo deleted"
+    }).end();
   } else {
     res.status(404).json({ error: 'Todo not found' });
   }
