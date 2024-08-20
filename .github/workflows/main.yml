@@ -18,6 +18,16 @@ jobs:
           with:
             node-version: ${{matrix.node-version}}
             cache: "npm"
+        - name: Caching NPM packages
+          uses: actions/cache@v3
+          with:
+            path: |
+             ~/.npm
+             node_modules
+             key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+             restore-keys: |
+             ${{ runner.os }}-node-
+
         - name: Setup Dependencies 
           run: npm install
         - name: Run index file
@@ -37,6 +47,15 @@ jobs:
           with:
             node-version: ${{matrix.node-version}}
             cache: "npm"
+        - name: Caching NPM packages
+          uses: actions/cache@v3
+          with:
+            path: |
+             ~/.npm
+             node_modules
+             key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+             restore-keys: |
+             ${{ runner.os }}-node- 
         - name: Setup Dependencies 
           run: npm install
         - name: Test the code
