@@ -59,12 +59,6 @@ In the first job we are firstly loading the repository in the current workspace 
 In the second job we are following the same approach as the first one for setting up the OS, node environment, and packages and as the last step of the job we are executing the test script .
 
 
-
-## Future Scope
-
-You are welcomed to update the existing workflow script for better performance and additional usecases.
-As of now we are planning to add status checks in further versions to ensure that developers get notify for every CI workflow.
-
 ## Getting Started with Github Actions Workflow
 
 To start contributing to the actions workflow follow the given steps below after completing the get-started section.
