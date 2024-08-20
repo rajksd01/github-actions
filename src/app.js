@@ -3,7 +3,7 @@ const { addTodo, getTodo, deleteTodo, listTodos } = require('./todoManager.js');
 
 const app = express();
 app.use(express.json());
-console.log("test")
+console.log("test1")
 
 app.post('/todos', (req, res) => {
   const { task } = req.body;
