@@ -17,7 +17,6 @@ jobs:
           uses: actions/setup-node@v1
           with:
             node-version: ${{matrix.node-version}}
-            cache: "npm"
         - name: Caching NPM packages
           uses: actions/cache@v3
           with:
@@ -46,7 +45,6 @@ jobs:
           uses: actions/setup-node@v1
           with:
             node-version: ${{matrix.node-version}}
-            cache: "npm"
         - name: Caching NPM packages
           uses: actions/cache@v3
           with:
